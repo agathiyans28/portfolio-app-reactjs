@@ -1,0 +1,121 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comforter&display=swap");
+
+$font-family: "Readex Pro", sans-serif;
+$logo-font: "Comforter";
+$text-color: rgb(0, 2, 90);
+$bg-color: #aaaaaa;
+
+.body {
+  background-color: #d3edee;
+}
+
+nav {
+  .navbar-brand {
+    color: $text-color;
+    font-size: 25px !important;
+    font-family: $logo-font;
+    @include media-breakpoint-up(lg) {
+      font-size: 30px !important;
+    }
+  }
+
+  .navbar-toggler {
+    position: relative;
+    height: 20px;
+    transition: 2s ease-in-out !important;
+  }
+
+  .navbar-toggler,
+  .navbar-toggler:focus,
+  .navbar-toggler:active,
+  .navbar-toggler-icon:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: 0 !important;
+  }
+
+  .toggler-icon {
+    position: absolute;
+    display: block;
+    height: 3px;
+    width: 100%;
+    border-radius: 1px;
+    background-color: $text-color !important;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
+  }
+
+  .navbar-toggler .top-icon {
+    transform: rotate(-135deg);
+  }
+
+  .navbar-toggler .mid-icon {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+
+  .navbar-toggler .bottom-icon {
+    transform: rotate(135deg);
+  }
+
+  .navbar-toggler.collapsed .top-icon {
+    transform: rotate(0);
+    margin-top: -15px;
+  }
+
+  .navbar-toggler.collapsed .mid-icon {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+
+  .navbar-toggler.collapsed .bottom-icon {
+    transform: rotate(0);
+    margin-top: 15px;
+  }
+
+  .nav-item {
+    @include media-breakpoint-down(md) {
+      margin: 0 !important;
+      text-align: center;
+      margin-top: 15px !important;
+      transition: 0.5s ease-in-out;
+    }
+  }
+
+  .nav-link {
+    color: $text-color;
+    padding: 6px 16px !important;
+    font-weight: 300 !important;
+    @include media-breakpoint-up(lg) {
+      font-weight: 400 !important;
+    }
+    @include media-breakpoint-only(sm) {
+      display: inline-block;
+      width: 75%;
+    }
+
+    &:hover {
+      background-color: $text-color !important;
+      color: white !important;
+    }
+  }
+  #contact-btn {
+    background-color: $text-color !important;
+    color: white !important;
+    @include media-breakpoint-only(sm) {
+      display: inline-block;
+      width: 75%;
+    }
+  }
+}
+
+.bubble {
+  position: absolute;
+  background-color: $text-color;
+  border-radius: 50%;
+  z-index: 0;
+}
