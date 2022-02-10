@@ -1,0 +1,147 @@
+@import "../../index.css";
+
+.navbar-brand {
+  font-family: var(--logo-font);
+  color: var(--text-color);
+  font-size: 2.2rem !important;
+}
+
+.navbar-toggler {
+  position: relative;
+  height: 20px;
+  transition: 2s ease-in-out;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: 0;
+}
+
+.toggler-icon {
+  position: absolute;
+  display: block;
+  height: 3px;
+  width: 100%;
+  border-radius: 1px;
+  background-color: var(--text-color);
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+
+.navbar-toggler .top-icon {
+  transform: rotate(45deg);
+}
+
+.navbar-toggler .mid-icon {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-icon {
+  transform: rotate(-45deg);
+}
+
+.navbar-toggler.collapsed .top-icon {
+  transform: rotate(0);
+  margin-top: -15px;
+}
+
+.navbar-toggler.collapsed .mid-icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-icon {
+  transform: rotate(0);
+  margin-top: 15px;
+}
+
+.nav-link {
+  color: var(--text-color) !important;
+  padding: 6px 16px;
+  font-family: var(--nav-font);
+  font-weight: 300;
+}
+.nav-link:hover {
+  color: #7777ac;
+}
+
+/* #contact-btn {
+  background-color: var(--text) !important;
+  color: white !important;
+  @include media-breakpoint-only(sm) {
+    display: inline-block;
+    width: 75%;
+  }
+} */
+
+/* For Mobile Devices */
+
+@media (max-width: 767px) {
+  .navbar-brand {
+    font-size: 2rem !important;
+  }
+
+  .nav-item {
+    margin: 0 !important;
+    margin-top: 25px !important;
+  }
+  .nav-link {
+    font-size: 2.5rem;
+    font-weight: 600 !important;
+  }
+
+  .nav-link:hover .arrow {
+    transition-duration: 0.5s;
+    margin-left: 15px;
+  }
+
+  #contact-btn {
+    background-color: var(--text-color);
+    color: var(--body-color) !important;
+    border: 1px solid var(--text-color);
+    text-align: center;
+  }
+  #contact-btn:hover {
+    background-color: transparent;
+    border: 1px solid var(--text-color);
+    color: var(--text-color) !important;
+  }
+}
+
+/* For small Mobile Devices */
+
+@media (max-width: 575px) {
+  .nav-link {
+    font-size: 2.2rem;
+  }
+}
+
+/* For Taplet Devices and above.. */
+
+@media (min-width: 767px) {
+  .navbar-brand {
+    font-size: 2.4rem !important;
+  }
+  .nav-item :hover {
+    background-color: var(--text-color);
+    color: white !important;
+  }
+}
+
+/* For Desktop Devices and above.. */
+@media (min-width: 992px) {
+  .navbar-brand {
+    font-size: 2rem;
+  }
+
+  .nav-link {
+    font-weight: 400 !important;
+  }
+}
