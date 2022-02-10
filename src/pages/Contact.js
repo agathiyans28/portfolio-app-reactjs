@@ -1,7 +1,7 @@
 import React from "react";
-import Navbar from "./Navbar";
+import Navbar from "../components/navbar/Navbar";
 
-function About() {
+function Contact() {
   return (
     <>
       <Navbar />
@@ -10,10 +10,10 @@ function About() {
         id="home"
         style={{ height: "90vh" }}
       >
-        <p data-aos="fade-right">Hello World</p>
+        <p data-aos="fade-down">Hello World</p>
       </div>
     </>
   );
 }
 
-export default About;
+export default Contact;

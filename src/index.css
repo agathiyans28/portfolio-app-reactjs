@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comforter&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap');
+
+:root {
+  --body-color: #d6e9e8;
+  --text-color: #0c0c52;
+  --logo-font: 'Libre Barcode 128 Text', cursive;
+  --nav-font: "Readex Pro";
+}
+
+body {
+  background-color: var(--body-color);
+  scroll-behavior: smooth;
+}

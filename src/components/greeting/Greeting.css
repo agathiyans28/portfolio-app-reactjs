@@ -1,0 +1,7 @@
+.greeting-container {
+    width: 90%;
+    color: var(--text-color);
+}
+.greeting-text-div {
+    margin-top: 80px !important
+}
