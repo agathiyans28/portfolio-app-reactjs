@@ -69,7 +69,7 @@
   font-weight: 300;
 }
 .nav-link:hover {
-  color: #7777ac;
+  color: #7777ac !important;
 }
 
 /* #contact-btn {
@@ -98,7 +98,7 @@
   }
 
   .nav-link:hover .arrow {
-    transition-duration: 0.5s;
+    transition-duration: 0.3s;
     margin-left: 15px;
   }
 
@@ -119,7 +119,10 @@
 
 @media (max-width: 575px) {
   .nav-link {
-    font-size: 2.2rem;
+    font-size: 2rem;
+  }
+  .nav-item {
+    margin-top: 0.8rem !important;
   }
 }
 
@@ -131,14 +134,14 @@
   }
   .nav-item :hover {
     background-color: var(--text-color);
-    color: white !important;
+    color: var(--body-color) !important;
   }
 }
 
 /* For Desktop Devices and above.. */
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .navbar-brand {
-    font-size: 2rem;
+    font-size: 2.6rem !important;
   }
 
   .nav-link {

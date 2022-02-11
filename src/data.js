@@ -1,3 +1,6 @@
+import { FaGithub, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import { AiOutlineGoogle } from "react-icons/ai"
+
 const greeting = {
   title: "Agathiyan Sivakumar",
   logo_name: "AGATHIYAN",
@@ -9,4 +12,27 @@ const greeting = {
   githubProfile: "",
 };
 
-export { greeting };
+const socialMedia = [
+  {
+    name: "Github",
+    link: "https://www.github.com/agathiyans28",
+    icon: <FaGithub />,
+  },
+  {
+    name: "Linkedin",
+    link: "https://www.linkedin.com/in/agathiyans28",
+    icon: <FaLinkedinIn />,
+  },
+  {
+    name: "Google",
+    link: "mailto:agathiyans28@gmail.com",
+    icon: <AiOutlineGoogle />,
+  },
+  {
+    name: "Instagram",
+    link: "https://www.instagram.com/agathiyans28",
+    icon: <FaInstagram />,
+  }
+];
+
+export { greeting, socialMedia };

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
+import { FaArrowRight } from "react-icons/fa"
 import { greeting } from "../../data";
 import "./Navbar.css";
 
@@ -47,7 +48,7 @@ function Navbar() {
                 <li className="nav-item ms-lg-3" key={index.toString()}>
                   <Link className="nav-link px-3" to={link.to}>
                     {link.name}{" "}
-                    <i className="fa-solid fa-arrow-right d-md-none arrow"></i>
+                    <FaArrowRight className="d-md-none arrow" />
                   </Link>
                 </li>
               ))}
