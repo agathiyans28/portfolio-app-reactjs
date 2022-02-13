@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
-import { FaArrowRight } from "react-icons/fa"
+import { FaArrowRight } from "react-icons/fa";
 import { greeting } from "../../data";
 import "./Navbar.css";
 
@@ -9,7 +9,7 @@ function Navbar() {
     { name: "Home", to: "/" },
     { name: "Education", to: "/education" },
     { name: "Projects", to: "/projects" },
-    { name: "About", to: "/about" }
+    { name: "About", to: "/about" },
   ];
 
   return (
@@ -19,13 +19,15 @@ function Navbar() {
           <a
             href="/"
             className="navbar-brand"
-            data-aos="fade-down"
-            data-aos-duration="1500"
+            // data-aos="fade-up"
+            // data-aos-duration="1500"
           >
             {greeting.logo_name}
           </a>
           <button
             className="navbar-toggler collapsed d-flex d-md-none justify-content-around flex-column"
+            // data-aos="fade-up"
+            // data-aos-duration="1500"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -40,15 +42,14 @@ function Navbar() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul
               className="navbar-nav ms-auto"
-              data-aos="fade-left"
-              data-aos-duration="2500"
-              data-aos-delay="500"
+              // data-aos="fade-left"
+              // data-aos-duration="2500"
+              // data-aos-delay="500"
             >
               {links.map((link, index) => (
                 <li className="nav-item ms-lg-3" key={index.toString()}>
                   <Link className="nav-link px-3" to={link.to}>
-                    {link.name}{" "}
-                    <FaArrowRight className="d-md-none arrow" />
+                    {link.name} <FaArrowRight className="d-md-none arrow" />
                   </Link>
                 </li>
               ))}

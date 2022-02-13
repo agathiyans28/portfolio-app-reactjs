@@ -4,7 +4,11 @@ import { socialMedia } from "../../data";
 
 function SocialMedia() {
   return (
-    <div className="media-div mt-5">
+    <div 
+    className="media-div mt-5" 
+    // data-aos="fade-up" 
+    // data-aos-duration="2500"
+    >
       {socialMedia.map((item) => (
         <a
           href={item.link}

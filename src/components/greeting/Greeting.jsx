@@ -9,8 +9,8 @@ function Greeting() {
     <div
       className="greeting-container mx-auto"
       id="home"
-      data-aos="fade-up"
-      data-aos-duration="2000"
+      // data-aos="fade-up"
+      // data-aos-duration="2000"
     >
       <div className="row greeting-main">
         <div className="col-md-6 mb-5">

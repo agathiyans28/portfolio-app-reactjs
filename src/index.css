@@ -3,14 +3,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap");
 
 :root {
-  --body-color: #e7e7ff;
-  --text-color: #0b154b;
+  --body-color: linear-gradient(180deg, #e9e9f0 0%, #d4dae2 50%, #d3dbeb 100%);
+  --text-color: rgba(23, 45, 200, 0.8);
   --secondary-text-color: #2d1c64;
   --logo-font: "Libre Barcode 128 Text", cursive;
   --nav-font: "Readex Pro";
 }
 
 body {
-  background-color: var(--body-color);
+  background: var(--body-color);
   scroll-behavior: smooth;
+  color: var(--text-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
