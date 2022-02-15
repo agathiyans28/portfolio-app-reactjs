@@ -1,5 +1,5 @@
 import { FaGithub, FaLinkedinIn, FaInstagram } from "react-icons/fa";
-import { AiOutlineGoogle } from "react-icons/ai"
+import { AiOutlineGoogle } from "react-icons/ai";
 
 const greeting = {
   title: "Agathiyan Sivakumar",
@@ -32,7 +32,55 @@ const socialMedia = [
     name: "Instagram",
     link: "https://www.instagram.com/agathiyans28",
     icon: <FaInstagram />,
-  }
+  },
 ];
 
-export { greeting, socialMedia };
+const skills = [
+  [
+    {
+      name: "HTML",
+      animation: "slide-up",
+      icon: 'src/assets/vectors/css3.svg'
+    },
+    {
+      name: "CSS",
+      animation: "slide-down-delay",
+    },
+    {
+      name: "SASS",
+      animation: "rotate",
+    },
+    {
+      name: "JS",
+      animation: "scale",
+    },
+    {
+      name: "ReactJS",
+      animation: "flip",
+    },
+    {
+      name: "NodeJS",
+      animation: "skew",
+    },
+  ],
+  [
+    {
+      name: "HTML",
+      animation: "slide-up",
+    },
+    {
+      name: "CSS",
+      animation: "slide-down-delay",
+    },
+    {
+      name: "SASS",
+      animation: "rotate",
+    },
+    {
+      name: "JS",
+      animation: "scale",
+    },
+  ],
+];
+
+export { greeting, socialMedia, skills };
