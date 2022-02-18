@@ -3,7 +3,7 @@ import { AiOutlineGoogle } from "react-icons/ai";
 
 const greeting = {
   title: "Agathiyan Sivakumar",
-  logo_name: "AGATHIYAN",
+  logo_name: "< Agathiyan Sivakumar />",
   role: "Software Developer",
   subTitle:
     " I'm a passionate learner who's always willing to learn and work across technologies and domains. I love to explore new technologies and leverage. I'm currently into Web Development and working on my MERN Website.",
@@ -17,68 +17,93 @@ const socialMedia = [
     name: "Github",
     link: "https://www.github.com/agathiyans28",
     icon: <FaGithub />,
+    backgroundColor: 'red'
   },
   {
     name: "Linkedin",
     link: "https://www.linkedin.com/in/agathiyans28",
     icon: <FaLinkedinIn />,
+    backgroundColor: 'blue'
   },
   {
     name: "Google",
     link: "mailto:agathiyans28@gmail.com",
     icon: <AiOutlineGoogle />,
+    backgroundColor: 'green'
   },
   {
     name: "Instagram",
     link: "https://www.instagram.com/agathiyans28",
     icon: <FaInstagram />,
+    backgroundColor: 'radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%)'
   },
 ];
 
 const skills = [
   [
     {
-      name: "HTML",
-      animation: "slide-up",
-      icon: 'src/assets/vectors/css3.svg'
+      title: "Full Stack Development",
     },
     {
-      name: "CSS",
-      animation: "slide-down-delay",
-    },
-    {
-      name: "SASS",
-      animation: "rotate",
-    },
-    {
-      name: "JS",
-      animation: "scale",
-    },
-    {
-      name: "ReactJS",
-      animation: "flip",
-    },
-    {
-      name: "NodeJS",
-      animation: "skew",
+      skills: [
+        {
+          name: "HTML",
+          logo: "html5.png",
+        },
+        {
+          name: "CSS",
+          logo: "css3.png",
+        },
+        {
+          name: "SASS",
+          logo: "sass.png",
+        },
+        {
+          name: "JavaScript",
+          logo: "javascript.png",
+        },
+        {
+          name: "ReactJS",
+          logo: "react.png",
+        },
+        {
+          name: "NodeJS",
+          logo: "nodejs.png",
+        },
+        {
+          name: "ExpressJS",
+          logo: "express.png",
+        },
+        {
+          name: "Python",
+          logo: "python.png",
+        },
+        {
+          name: "MongoDB",
+          logo: "mongodb.png",
+        },
+        {
+          name: "MySQL",
+          logo: "mysql.png",
+        },
+      ],
     },
   ],
   [
     {
-      name: "HTML",
-      animation: "slide-up",
+      title: "UI/UX Design",
     },
     {
-      name: "CSS",
-      animation: "slide-down-delay",
-    },
-    {
-      name: "SASS",
-      animation: "rotate",
-    },
-    {
-      name: "JS",
-      animation: "scale",
+      skills: [
+        {
+          name: "PhotoShop",
+          logo: "photoshop.png",
+        },
+        {
+          name: "Figma",
+          logo: "figma.png",
+        },
+      ],
     },
   ],
 ];

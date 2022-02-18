@@ -19,15 +19,15 @@ function Navbar() {
           <a
             href="/"
             className="navbar-brand"
-            // data-aos="fade-up"
-            // data-aos-duration="1500"
+            data-aos="fade-up"
+            data-aos-duration="1500"
           >
             {greeting.logo_name}
           </a>
           <button
             className="navbar-toggler collapsed d-flex d-md-none justify-content-around flex-column"
-            // data-aos="fade-up"
-            // data-aos-duration="1500"
+            data-aos="fade-up"
+            data-aos-duration="1500"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -42,9 +42,9 @@ function Navbar() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul
               className="navbar-nav ms-auto"
-              // data-aos="fade-left"
-              // data-aos-duration="2500"
-              // data-aos-delay="500"
+              data-aos="fade-left"
+              data-aos-duration="2500"
+              data-aos-delay="500"
             >
               {links.map((link, index) => (
                 <li className="nav-item ms-lg-3" key={index.toString()}>

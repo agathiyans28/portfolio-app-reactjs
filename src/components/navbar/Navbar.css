@@ -134,7 +134,7 @@
   }
   .nav-item :hover {
     background-color: var(--text-color);
-    color: var(--body-color) !important;
+    color: white !important;
   }
 }
 

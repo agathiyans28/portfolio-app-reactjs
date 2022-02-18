@@ -1,3 +1,4 @@
+
 .skillset-main {
   width: 90%;
   padding: 0 15px;
@@ -7,7 +8,6 @@
   font-size: 2.3rem;
   font-weight: 600;
 }
-
 
 /* GENERAL STYLES FOR BOX AND OVERLAY */
 
@@ -23,7 +23,7 @@
   align-items: center;
   border-radius: 10px;
   width: 100%;
-  height: 180px;
+  height: 140px;
   overflow: hidden;
   background-color: #eee;
   text-align: center;
@@ -37,169 +37,29 @@
   left: 0;
   top: 0;
   right: 0;
-  bottom: 0;
 }
 
-/* SLIDE IN */
-
-.slide-in .overlay {
-  background-color: #6addaa;
-  line-height: 200px;
-  color: #fff;
-  transform: translateX(-100%);
-  -webkit-transition: transform 0.5s ease-out;
-  -o-transition: transform 0.5s ease-out;
-  transition: transform 0.5s ease-out;
+.overlay p {
+  color: var(--text-color);
+  margin-top: 4px;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
-
-.slide-in .box:hover .overlay {
-  transform: translateX(0);
-}
-
-/* SLIDE UP */
 
 .slide-up .overlay {
-  background-color: #3dcbe8;
-  line-height: 200px;
+  border-radius: 15px;
   color: #fff;
   transform: translateY(100%);
   -webkit-transition: transform 0.5s ease-out;
   -o-transition: transform 0.5s ease-out;
   transition: transform 0.5s ease-out;
 }
+.slide-up .box:hover {
+  background: lightcyan;
+}
 
 .slide-up .box:hover .overlay {
-  transform: translateY(0);
-}
-
-/* SLIDE DOWN DELAY */
-
-.slide-down-delay .overlay {
-  background-color: #ee6f8c;
-  line-height: 200px;
-  color: #fff;
-  transform: translateY(-100%);
-  -webkit-transition: transform 0.5s ease-out;
-  -o-transition: transform 0.5s ease-out;
-  transition: transform 0.5s ease-out;
-}
-
-.slide-down-delay .box:hover .overlay {
-  transform: translateY(0);
-}
-
-.slide-down-delay .overlay i {
-  transform: translateY(-80%);
-  opacity: 0;
-  -webkit-transition: transform 0.5s linear, opacity 0.5s linear 0.5s;
-  -o-transition: transform 0.5s linear, opacity 0.5s linear 0.5s;
-  transition: transform 0.5s linear, opacity 0.5s linear 0.5s;
-}
-
-.slide-down-delay .box:hover .overlay i {
-  transform: translateY(0);
-  opacity: 1;
-}
-
-/* ROTATE */
-
-.rotate .overlay {
-  background-color: #6d94bb;
-  line-height: 200px;
-  color: #fff;
-  transform-origin: 0 0;
-  transform: rotate(90deg);
-  -webkit-transition: transform 0.5s ease-in-out;
-  -o-transition: transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out;
-}
-
-.rotate .box:hover .overlay {
-  transform: rotate(0deg);
-}
-
-/* SCALE */
-
-.scale .overlay {
-  background-color: #efcb5e;
-  line-height: 200px;
-  color: #fff;
-  transform: translateX(210%) scale(3);
-  -webkit-transition: transform 0.6s ease-in-out;
-  -o-transition: transform 0.6s ease-in-out;
-  transition: transform 0.6s ease-in-out;
-}
-
-.scale .box:hover .overlay {
-  transform: translateX(0) scale(1);
-}
-
-/* FLIP */
-
-.flip .overlay {
-  background-color: #009688;
-  line-height: 200px;
-  color: #fff;
-  opacity: 0;
-  transform: rotateY(180deg);
-  -webkit-transition: transform 0.6s ease-in-out 0.3s, opacity 0.3s ease-in-out;
-  -o-transition: transform 0.6s ease-in-out 0.3s, opacity 0.3s ease-in-out;
-  transition: transform 0.6s ease-in-out 0.3s, opacity 0.3s ease-in-out;
-}
-
-.flip .box:hover .overlay {
-  opacity: 1;
-  transform: rotateY(0deg);
-}
-
-/* SKEW */
-
-.skew .overlay {
-  background-color: #f44336;
-  line-height: 200px;
-  color: #fff;
-  opacity: 0;
-  transform: skewX(-10deg);
-  -webkit-transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-  -o-transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-}
-
-.skew .box:hover .overlay {
-  transform: skewX(0deg);
-  opacity: 1;
-}
-
-/* CORNER */
-
-.corner-bottom .overlay {
-  background-color: #9c27b0;
-  line-height: 200px;
-  color: #fff;
-  transform: translate(100%, 100%);
-  -webkit-transition: transform 0.4s ease-in-out;
-  -o-transition: transform 0.4s ease-in-out;
-  transition: transform 0.4s ease-in-out;
-}
-
-.corner-bottom .box:hover .overlay {
-  transform: translate(0, 0);
-}
-
-/* CORNER */
-
-.corner-top .overlay {
-  background-color: #ff5722;
-  line-height: 200px;
-  color: #fff;
-  transform: translate(-100%, -100%);
-  -webkit-transition: transform 0.4s ease-in-out;
-  -o-transition: transform 0.4s ease-in-out;
-  transition: transform 0.4s ease-in-out;
-}
-
-.corner-top .box:hover .overlay {
-  transform: translate(0, 0);
+  transform: translateY(75%);
 }
 
 @media (max-width: 575px) {

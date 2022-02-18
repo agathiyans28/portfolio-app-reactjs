@@ -15,7 +15,7 @@ function SocialMedia() {
           className="social-icon"
           target="_blank"
           rel="noopener noreferrer"
-          style={{ backgroundColor: item.backgroundColor }}
+          style={{ background: item.backgroundColor }}
           key={index}
         >
           {item.icon}
