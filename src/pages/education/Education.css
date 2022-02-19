@@ -4,6 +4,38 @@
   margin-bottom: 100px;
 }
 
-.row {
-    margin-top: 40px !important;
+.heading-div {
+  margin-top: 50px !important;
 }
+
+.heading-text-div {
+  line-height: 1.8rem;
+}
+
+.heading-text {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.blockquote {
+  
+  font-weight: 400;
+}
+
+/* For Mobile Devices Start */
+
+@media (max-width: 767px) {
+  .heading-div {
+    margin-top: 100px !important;
+  }
+  .heading-text-div {
+    margin-top: 80px !important;
+  }
+  .heading-text {
+    font-size: 36px;
+  }
+  .blockquote {
+    font-weight: 300;
+  }
+}
+
+/* For Mobile Devices End */

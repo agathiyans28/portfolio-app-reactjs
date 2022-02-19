@@ -3,7 +3,6 @@
 .navbar-brand {
   font-family: var(--logo-font);
   color: var(--text-color);
-  font-size: 2.2rem !important;
 }
 
 .navbar-toggler {
@@ -72,20 +71,11 @@
   color: #7777ac !important;
 }
 
-/* #contact-btn {
-  background-color: var(--text) !important;
-  color: white !important;
-  @include media-breakpoint-only(sm) {
-    display: inline-block;
-    width: 75%;
-  }
-} */
-
 /* For Mobile Devices */
 
 @media (max-width: 767px) {
   .navbar-brand {
-    font-size: 2rem !important;
+    font-size: 1.7rem !important;
   }
 
   .nav-item {
@@ -97,9 +87,14 @@
     font-weight: 600 !important;
   }
 
-  .nav-link:hover .arrow {
-    transition-duration: 0.3s;
-    margin-left: 15px;
+  .arrow {
+    font-size: 30px;
+    opacity: 0;
+    transition: all .5s ease-out;
+  } 
+  .nav-item:hover .arrow {
+    transform: translateX(20px);
+    opacity: 1;
   }
 
   #contact-btn {
@@ -130,7 +125,7 @@
 
 @media (min-width: 767px) {
   .navbar-brand {
-    font-size: 2.4rem !important;
+    font-size: 1.9rem !important;
   }
   .nav-item :hover {
     background-color: var(--text-color);
@@ -141,7 +136,7 @@
 /* For Desktop Devices and above.. */
 @media (min-width: 1200px) {
   .navbar-brand {
-    font-size: 2.6rem !important;
+    font-size: 2.3rem !important;
   }
 
   .nav-link {

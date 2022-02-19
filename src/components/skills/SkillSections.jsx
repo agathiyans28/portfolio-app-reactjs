@@ -9,6 +9,8 @@ function SkillSections(props) {
       <div className="row mx-auto">
         {prop[1].skills.map((item, index) => (
           <div
+            // data-aos='slide-up'
+            // data-aos-duration='1500'
             className="col-6 col-sm-4 col-md-3 col-xl-2 slide-up"
             key={index}
           >

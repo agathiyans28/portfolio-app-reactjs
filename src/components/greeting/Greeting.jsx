@@ -1,6 +1,7 @@
 import React from "react";
 import { greeting } from "../../data";
 import { ReactComponent as Image } from "../../assets/home_image.svg";
+import Arrow from "../../components/arrow/Arrow";
 import "./Greeting.css";
 import SocialMedia from "./SocialMedia";
 
@@ -24,6 +25,7 @@ function Greeting() {
         <div className="col-md-6 mt-3">
           <Image className="h-auto mw-100" />
         </div>
+        <Arrow />
       </div>
     </div>
   );
