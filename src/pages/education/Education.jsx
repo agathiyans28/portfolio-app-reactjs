@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../../components/navbar/Navbar";
 import degree from "../../assets/degree.png";
 import Arrow from "../../components/arrow/Arrow";
+import Degree from "../../components/degree/Degree";
 import Footer from "../../components/footer/Footer";
 import "./Education.css";
 
@@ -33,6 +34,8 @@ function Education() {
         </div>
         <Arrow />
       </div>
+      <Degree />
+
       <Footer />
     </>
   );

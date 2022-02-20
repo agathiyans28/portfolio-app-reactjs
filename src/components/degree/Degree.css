@@ -1,0 +1,49 @@
+.degree-main {
+  width: 90%;
+  padding: 0 15px;
+  margin: auto;
+}
+.degree-title {
+  font-size: 2.3rem;
+  font-weight: 600;
+}
+
+/* Degree Section Start */
+
+
+.row .logo {
+  box-shadow: -5px 5px 10px grey;
+  background-color: #e4e4e4;
+}
+
+.degree-text-div {
+  box-shadow: 0 0 10px grey;
+  font-family: "Sarabun";
+  border-radius: 10px;
+  background-color: #e4e4e4;
+  overflow: hidden;
+}
+
+.body-header {
+  background-color: #d7dee0;
+}
+
+.card-title {
+  font-weight: 700;
+  color: rgb(16, 77, 190);
+}
+.card-subtitle {
+  color: rgb(47, 63, 119);
+  margin-top: 10px !important;
+}
+
+.duration { 
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.body-content {
+  font-size: 18px;
+}
+
+/* Degree Section End */

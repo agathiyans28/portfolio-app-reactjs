@@ -13,6 +13,8 @@
   line-height: 2rem !important;
 }
 .greeting-text-name {
+  font-family: 'Sarabun';
+  font-style: italic;
   font-weight: 800;
   font-size: 50px;
   color: var(--text-color);
