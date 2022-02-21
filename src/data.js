@@ -108,4 +108,27 @@ const skills = [
   ],
 ];
 
-export { greeting, socialMedia, skills };
+const degrees = [
+  {
+    logo: 'pondiuni.png',
+    title: 'Pondicherry University - Puducherry',
+    subTitle: 'Master of Computer Application',
+    duration: '2018 - 2021',
+    content: [
+      'I have studied basic software engineering subjects like DS, Algorithms, DBMS, OS, CA, AI etc.',
+      'Apart from this, I have done courses on Deep Learning, Data Science, Cloud Computing and Full Stack Development.'
+    ]
+  },
+  {
+    logo: 'gackmu.png',
+    title: 'Government Arts College (Autonomous) - Kumbakonam',
+    subTitle: 'Bachelor of Computer Application',
+    duration: '2015 - 2018',
+    content: [
+      'I have studied basic software engineering subjects like DS, Algorithms, DBMS, OS, CA, AI etc.',
+      'Apart from this, I have done courses on Deep Learning, Data Science, Cloud Computing and Full Stack Development.'
+    ]
+  }
+]
+
+export { greeting, socialMedia, skills, degrees };
