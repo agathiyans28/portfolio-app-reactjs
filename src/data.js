@@ -111,7 +111,9 @@ const skills = [
 const degrees = [
   {
     logo: 'pondiuni.png',
-    title: 'Pondicherry University - Puducherry',
+    link: 'https://www.pondiuni.edu.in/',
+    title: 'Pondicherry University',
+    location: 'Puducherry',
     subTitle: 'Master of Computer Application',
     duration: '2018 - 2021',
     content: [
@@ -121,7 +123,9 @@ const degrees = [
   },
   {
     logo: 'gackmu.png',
-    title: 'Government Arts College (Autonomous) - Kumbakonam',
+    link: 'https://gacakum.ac.in/',
+    title: 'Government Arts College (Autonomous)',
+    location: 'Kumbakonam',
     subTitle: 'Bachelor of Computer Application',
     duration: '2015 - 2018',
     content: [
