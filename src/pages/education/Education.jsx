@@ -3,6 +3,7 @@ import Navbar from "../../components/navbar/Navbar";
 import degree from "../../assets/degree.png";
 import Arrow from "../../components/arrow/Arrow";
 import Degree from "../../components/degree/Degree";
+import Certification from "../../components/certification/Certification";
 import Footer from "../../components/footer/Footer";
 import "./Education.css";
 
@@ -22,11 +23,11 @@ function Education() {
           </div>
           <div className="col-md-5 text-center heading-text-div">
             <h1 className="heading-text">Education</h1>
-            <figure class="text-center">
-              <blockquote class="blockquote">
+            <figure className="text-center">
+              <blockquote className="blockquote">
                 <p>Learning is a treasure that follows its owner everywhere.</p>
               </blockquote>
-              <figcaption class="blockquote-footer text-end">
+              <figcaption className="blockquote-footer text-end">
                 Chinese Proverb
               </figcaption>
             </figure>
@@ -35,7 +36,7 @@ function Education() {
         <Arrow />
       </div>
       <Degree />
-
+      <Certification />
       <Footer />
     </>
   );
