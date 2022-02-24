@@ -1,44 +1,58 @@
 import React from "react";
+import { certificates } from "../../data";
 import "./Certification.css";
 
-const datas = [
-  {
-    name: "Python",
-  },
-  {
-    name: "CSS",
-  },
-  {
-    name: "JavaScript",
-  },
-];
+function Cards(props) {
+  const item = props.items;
+  return (
+    <div
+      className="col-12 col-sm-10 col-md-6 col-lg-4 mb-5"
+      // data-aos="zoom-in-up"
+      // data-aos-duration="1200"
+    >
+      <div className="flip">
+        <div className="front">
+          <h1 className="text-shadow">{item.name}</h1>
+          <div className="d-flex justify-content-end">
+            <img
+              className="logo-box pt-2"
+              src={require(`../../assets/logo/${item.logo}`)}
+              alt="Course Logo"
+            />
+          </div>
+        </div>
+        <div className="back text-center">
+          <h2>{item.certifyName}</h2>
+          <h5 style={{ color: "green" }}>{item.siteName}</h5>
+          <p className="overflow-auto">{item.about}</p>
+          <a
+            href={item.link}
+            target="_blank"
+            rel="noreferrer"
+            className="btn btn-primary"
+            type="button"
+          >
+            Check It
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 function Certification() {
   return (
     <div className="certification-container mb-5">
-      <h1 className="text-center mb-5 certification-title">Certifications</h1>
+      <h1
+        className="text-center mb-5 certification-title"
+        // data-aos="fade-up"
+        // data-aos-duration="2000"
+      >
+        Certifications
+      </h1>
       <div className="row mx-auto d-flex justify-content-center align-items-center">
-        {datas.map((item, index) => (
-          <div className="col-12 col-sm-10 col-md-6 col-lg-4 mb-4">
-            <div class="flip">
-              <div
-                class="front"
-                style={{
-                  backgroundImage:
-                    "url(https://images.pexels.com/photos/540518/pexels-photo-540518.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)",
-                }}
-              >
-                <h1 class="text-shadow">{item.name}</h1>
-              </div>
-              <div class="back">
-                <h2>Angular</h2>
-                <p>
-                  Good tools make application development quicker and easier to
-                  maintain than if you did everything by hand..
-                </p>
-              </div>
-            </div>
-          </div>
+        {certificates.map((item, index) => (
+          <Cards items={item} key={index} />
         ))}
       </div>
     </div>

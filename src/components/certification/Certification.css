@@ -12,13 +12,8 @@
 
 /* Card Design Start */
 
-
-.flip {
-  position: relative;
-}
 .flip > .front,
 .flip > .back {
-  
   transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transition-duration: 0.5s;
   transition-property: transform, opacity;
@@ -41,15 +36,7 @@
 .flip:hover > .back {
   opacity: 1;
   transform: rotateY(0deg);
-}
-.flip.flip-vertical > .back {
-  transform: rotateX(-180deg);
-}
-.flip.flip-vertical:hover > .front {
-  transform: rotateX(180deg);
-}
-.flip.flip-vertical:hover > .back {
-  transform: rotateX(0deg);
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
 }
 .flip {
   position: relative;
@@ -58,20 +45,20 @@
 .flip > .front,
 .flip > .back {
   display: block;
-  color: white;
+  background-color: #e4e4e4;
   width: inherit;
-  background-size: cover !important;
-  background-position: center !important;
-  height: 220px;
+  height: 250px;
   padding: 1em 2em;
-  background: #313131;
+  color: #1f1e38;
   border-radius: 10px;
+  box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.1);
 }
 .flip > .front p,
 .flip > .back p {
   font-size: 0.9125rem;
   line-height: 160%;
   color: #999;
+  height: 95px;
 }
 .text-shadow {
   text-shadow: 1px 1px rgba(0, 0, 0, 0.04), 2px 2px rgba(0, 0, 0, 0.04),
@@ -84,6 +71,11 @@
     0.625rem 0.625rem rgba(0, 0, 0, 0.04), 16px 16px rgba(0, 0, 0, 0.04),
     17px 17px rgba(0, 0, 0, 0.04), 18px 18px rgba(0, 0, 0, 0.04),
     19px 19px rgba(0, 0, 0, 0.04), 1.25rem 1.25rem rgba(0, 0, 0, 0.04);
+}
+
+.logo-box {
+  width: 130px;
+  height: 130px;
 }
 
 /* Card Design End */
