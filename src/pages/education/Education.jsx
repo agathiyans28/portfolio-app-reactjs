@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../../components/navbar/Navbar";
-import degree from "../../assets/degree.png";
+import degree from "../../assets/images/degree.png";
 import Arrow from "../../components/arrow/Arrow";
 import Degree from "../../components/degree/Degree";
 import Certification from "../../components/certification/Certification";
@@ -16,10 +16,10 @@ function EducationGreeting() {
       // data-aos-duration="2000"
     >
       <div className="row heading-div">
-        <div className="col-md-6">
+        <div className="col-md-6 p-2 p-md-4">
           <img className="h-auto w-100" src={degree} alt="" />
         </div>
-        <div className="col-md-5 text-center heading-text-div">
+        <div className="col-md-6 p-3 p-md-5 text-center heading-text-div">
           <h1 className="heading-text">Education</h1>
           <figure className="text-center">
             <blockquote className="blockquote">

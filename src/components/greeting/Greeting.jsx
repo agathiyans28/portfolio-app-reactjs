@@ -1,6 +1,5 @@
 import React from "react";
 import { greeting } from "../../data";
-// import { ReactComponent as Image } from "../../assets/home_image.svg";
 import HomeImg from "./HomeImg";
 import Arrow from "../../components/arrow/Arrow";
 import "./Greeting.css";

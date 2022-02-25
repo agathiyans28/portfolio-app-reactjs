@@ -1,0 +1,36 @@
+.project-container {
+  width: 90%;
+  padding: 0px 15px;
+  margin-bottom: 100px;
+}
+
+.heading-text-div {
+  line-height: 1.8rem;
+}
+
+.heading-text {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.blockquote {
+  font-weight: 400;
+}
+.img-div {
+  max-width: 530px !important;
+}
+
+@media (max-width: 767px) {
+  .heading-div {
+    margin-top: 100px !important;
+  }
+  .heading-text-div {
+    margin-top: 80px !important;
+  }
+  .heading-text {
+    font-size: 36px;
+  }
+  .blockquote {
+    font-weight: 300;
+    background-color: rgb(41, 163, 194);
+  }
+}

@@ -1,6 +1,6 @@
 import React from "react";
 import "./Arrow.css";
-import arrow from '../../assets/arrow.svg'
+import arrow from '../../assets/logo/arrow.svg'
 
 function Arrow() {
   return (
