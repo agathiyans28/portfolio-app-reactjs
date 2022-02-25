@@ -1,4 +1,6 @@
 import React from "react";
+import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
+import "react-circular-progressbar/dist/styles.css";
 
 function SkillSections(props) {
   const prop = props.skills;
@@ -34,15 +36,17 @@ function SkillSections(props) {
                 </div>
                 <div className="back-card">
                   <div className="inner">
-                    <div
-                      className="radial-progress mx-auto mt-3 percent pt-5"
-                      role="progressbar"
-                      aria-valuenow={item.percent}
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                      style={{background : `conic-gradient(hsl(210 100% 70%), hsl(220 100% 40%), hsl(220 100% 70%) ${item.percent}%,  hsl(233 34% 92%) ${item.percent}% 100%`}}
-                    >
-                      {item.percent + "%"}
+                    <div className="circuler-bar h-auto mx-auto mt-3">
+                      <CircularProgressbar
+                        value={item.percent}
+                        text={`${item.percent}%`}
+                        circleRatio={0.75}
+                        styles={buildStyles({
+                          rotation: 1 / 2 + 1 / 8,
+                          strokeLinecap: "butt",
+                          trailColor: "#eee",
+                        })}
+                      />
                     </div>
                     <p>{item.name}</p>
                   </div>

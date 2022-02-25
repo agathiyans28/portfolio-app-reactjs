@@ -132,30 +132,9 @@
   font-size: 1.5rem;
   font-weight: 600;
 }
-
-/* Process Bar Start */
-
-.radial-progress {
-  --hue: 220;
-  --holesize: 55%;
-  --track-bg: rgb(205, 207, 233);
-
-  width: 9rem;
-  height: 9rem;
-  display: grid;
-  place-items: center;
-  position: relative;
-  font-weight: 700;
-  font-size: 1.4rem;
-
-  border-radius: 50%;
-  z-index: 2;
+.circuler-bar {
+  width: 125px;
 }
-.percent {
-  color: rgb(253, 253, 255);
-}
-
-/* Process Bar End */
 
 @media (max-width: 575px) {
   .box {

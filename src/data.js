@@ -17,19 +17,19 @@ const socialMedia = [
     name: "Github",
     link: "https://www.github.com/agathiyans28",
     icon: <FaGithub />,
-    backgroundColor: "red",
+    backgroundColor: "black",
   },
   {
     name: "Linkedin",
     link: "https://www.linkedin.com/in/agathiyans28",
     icon: <FaLinkedinIn />,
-    backgroundColor: "blue",
+    backgroundColor: "#0a5cd9",
   },
   {
     name: "Google",
     link: "mailto:agathiyans28@gmail.com",
     icon: <AiOutlineGoogle />,
-    backgroundColor: "green",
+    backgroundColor: "#d40f0f",
   },
   {
     name: "Instagram",

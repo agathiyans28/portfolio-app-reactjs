@@ -5,7 +5,7 @@ import { socialMedia } from "../../data";
 function SocialMedia() {
   return (
     <div
-      className="media-div mt-5"
+      className="media-div mt-5 pt-5 mb-5 mb-md-0 pt-md-0"
       // data-aos="fade-up"
       // data-aos-duration="2500"
     >
