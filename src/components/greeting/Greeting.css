@@ -12,6 +12,7 @@
 }
 
 .text-title {
+  font-style: italic;
   text-transform: uppercase;
   background: rgb(52, 22, 94);
   background: linear-gradient(
@@ -24,12 +25,11 @@
     rgba(134, 34, 148, 1) 88%,
     rgba(52, 22, 94, 1) 100%
   );
+
   background-size: auto auto;
   background-clip: border-box;
   background-size: 200% auto;
-  color: #fff;
   background-clip: text;
-  color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 4s linear infinite;
@@ -50,7 +50,7 @@
 .greeting-text-role {
   color: var(--secondary-text-color);
 }
-.img-div {
+.home-img {
   max-width: 490px !important;
 }
 
@@ -75,7 +75,6 @@
 }
 
 /* Social Media Style */
-
 
 /* For Mobile Devices */
 

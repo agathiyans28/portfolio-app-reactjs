@@ -20,7 +20,7 @@ function DegreeSection(props) {
             rel="noreferrer"
             className="position-absolute translate-middle logo-link py-2 px-4 rounded-pill"
           >
-            Visit
+            Go
           </a>
         </div>
       </div>

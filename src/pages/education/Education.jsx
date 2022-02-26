@@ -15,16 +15,16 @@ function EducationGreeting() {
       // data-aos="fade-up"
       // data-aos-duration="2000"
     >
-      <div className="row heading-div">
-        <div className="col-md-6 p-2 p-md-4">
-          <img className="h-auto w-100" src={degree} alt="" />
+      <div className="row heading-div mb-4 d-md-flex justify-content-around">
+        <div className="col-md-6 p-3 d-flex justify-content-center">
+          <img className="edu-img w-100" src={degree} alt="Degree Logo" />
         </div>
         <div className="col-md-6 p-3 p-md-5 text-center heading-text-div">
           <h1 className="heading-text">Education</h1>
           <figure className="text-center">
-            <blockquote className="blockquote">
-              <p>Learning is a treasure that follows its owner everywhere.</p>
-            </blockquote>
+            <p className="sub-title">
+              Learning is a treasure that follows its owner everywhere.
+            </p>
             <figcaption className="blockquote-footer text-end">
               Chinese Proverb
             </figcaption>

@@ -4,7 +4,7 @@ import { AiOutlineGoogle } from "react-icons/ai";
 const greeting = {
   title: "Agathiyan Sivakumar",
   logo_name: "< Agathiyan Sivakumar />",
-  role: "Software Developer",
+  role: ["Web Developer", "Software Developer"],
   subTitle:
     " I'm a passionate learner who's always willing to learn and work across technologies and domains. I love to explore new technologies and leverage. I'm currently into Web Development and working on my MERN Website.",
   resumeLink: "",
@@ -50,52 +50,52 @@ const skills = [
         {
           name: "HTML",
           logo: "html5.png",
-          percent: "96"
+          percent: "96",
         },
         {
           name: "CSS",
           logo: "css3.png",
-          percent: "93"
+          percent: "93",
         },
         {
           name: "SASS",
           logo: "sass.png",
-          percent: "91"
+          percent: "91",
         },
         {
           name: "JavaScript",
           logo: "javascript.png",
-          percent: "76"
+          percent: "76",
         },
         {
           name: "ReactJS",
           logo: "react.png",
-          percent: "67"
+          percent: "67",
         },
         {
           name: "NodeJS",
           logo: "nodejs.png",
-          percent: "64"
+          percent: "64",
         },
         {
           name: "ExpressJS",
           logo: "express.png",
-          percent: "65"
+          percent: "65",
         },
         {
           name: "Python",
           logo: "python.png",
-          percent: "79"
+          percent: "79",
         },
         {
           name: "MongoDB",
           logo: "mongodb.png",
-          percent: "71"
+          percent: "71",
         },
         {
           name: "MySQL",
           logo: "mysql.png",
-          percent: "78"
+          percent: "78",
         },
       ],
     },
@@ -109,12 +109,12 @@ const skills = [
         {
           name: "PhotoShop",
           logo: "photoshop.png",
-          percent: "75"
+          percent: "75",
         },
         {
           name: "Figma",
           logo: "figma.png",
-          percent: "69"
+          percent: "69",
         },
       ],
     },

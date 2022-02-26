@@ -5,7 +5,6 @@ import About from "./pages/About";
 import Education from "./pages/education/Education";
 import Contact from "./pages/Contact";
 import Projects from "./pages/projects/Projects";
-
 import AOS from "aos";
 import "aos/dist/aos.css";
 

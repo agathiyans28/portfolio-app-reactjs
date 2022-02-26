@@ -8,7 +8,7 @@ function SkillSections(props) {
   return (
     <div className="skills-main mt-5">
       <h4 className="text-center text-primary">{prop[0].title}</h4>
-      <div className="row mx-auto">
+      <div className="row mx-auto mt-4">
         {prop[1].skills.map((item, index) => {
           const setProgress = (progress) => {
             const value = `${progress}%`;
@@ -24,7 +24,7 @@ function SkillSections(props) {
               className="col-6 col-sm-4 col-md-3 col-xl-2 p-2"
               key={index}
             >
-              <div className="box mb-5" onLoad={setProgress(item.percent)}>
+              <div className="box mb-5 mb-sm-3" onLoad={setProgress(item.percent)}>
                 <div className="front-card">
                   <div className="inner p-4">
                     <img

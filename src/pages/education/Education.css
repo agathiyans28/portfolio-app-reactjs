@@ -8,6 +8,10 @@
   margin-top: 50px !important;
 }
 
+.edu-img {
+  max-width: 570px !important;
+}
+
 .heading-text-div {
   line-height: 1.8rem;
 }
@@ -17,7 +21,6 @@
   margin-bottom: 20px;
 }
 .blockquote {
-  
   font-weight: 400;
 }
 

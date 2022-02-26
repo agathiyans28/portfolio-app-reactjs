@@ -1,7 +1,6 @@
 .project-container {
   width: 90%;
   padding: 0px 15px;
-  margin-bottom: 100px;
 }
 
 .heading-text-div {
@@ -11,26 +10,28 @@
 .heading-text {
   font-size: 50px;
   margin-bottom: 20px;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.04), 2px 2px rgba(0, 0, 0, 0.04),
+    3px 3px rgba(0, 0, 0, 0.04), 4px 4px rgba(0, 0, 0, 0.04),
+    0.125rem 0.125rem rgba(0, 0, 0, 0.04), 6px 6px rgba(0, 0, 0, 0.04);
 }
-.blockquote {
-  font-weight: 400;
-}
+
 .img-div {
   max-width: 530px !important;
 }
 
+.sub-title {
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+
 @media (max-width: 767px) {
-  .heading-div {
-    margin-top: 100px !important;
-  }
   .heading-text-div {
     margin-top: 80px !important;
   }
   .heading-text {
     font-size: 36px;
   }
-  .blockquote {
+  .sub-title {
     font-weight: 300;
-    background-color: rgb(41, 163, 194);
   }
 }

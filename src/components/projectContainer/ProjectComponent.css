@@ -1,0 +1,109 @@
+.project-main {
+  width: 90%;
+  padding: 0 15px;
+}
+.project-title {
+  font-size: 2.3rem;
+  font-weight: 600;
+}
+
+/* Project Card Design */
+
+.project-card {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  height: 450px;
+  border-radius: 3px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  transition: 0.5s ease-out;
+}
+.project-card .thumb {
+  width: auto;
+  height: 360px;
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/new-york-city.png")
+    no-repeat center;
+  background-size: cover;
+  border-radius: 5px;
+}
+.project-card .overlay {
+  width: auto;
+  height: 450px;
+  position: relative;
+  padding: 14px 24px;
+  background: #e4e4e4;
+  transform: translateY(0px);
+  border-radius: 3px;
+  transition: 0.5s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+}
+.project-card .overlay .title {
+  position: relative;
+  margin: 10px 0;
+  letter-spacing: 1px;
+  color: green;
+  font-size: 1.1rem;
+  text-shadow: 0 0 0px #32577f;
+  font-weight: 600;
+}
+.project-card .overlay .flag {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 35px;
+  height: 23px;
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/flag.png")
+    no-repeat top right;
+  background-size: 100% auto;
+  display: inline-block;
+}
+.project-card .overlay .date,
+.project-card .overlay .seats {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  color: rgba(21, 37, 54, 0.7);
+}
+.project-card .overlay .seats {
+  display: inline-block;
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: 0.5s 0.25s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+}
+.project-card .overlay .details {
+  line-height: 2;
+  font-size: 0.95rem;
+  color: rgba(21, 37, 54, 0.7);
+  opacity: 0;
+  transition: 0.5s 0.25s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+}
+.project-card .overlay .goto-btn {
+  position: absolute;
+  left: 0;
+  left: 0;
+  bottom: 0;
+  margin: 10px auto;
+  padding: 20px 24px;
+  letter-spacing: 1px;
+  color: #181f63;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  opacity: 0;
+  transition: 0.5s 0.25s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+}
+.project-card:hover {
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.55);
+  transform: scale(1.02);
+}
+.project-card:hover .overlay {
+  transform: translateY(-360px);
+}
+.project-card:hover .overlay .seats,
+.project-card:hover .overlay .details,
+.project-card:hover .overlay .goto-btn {
+  opacity: 1;
+}
