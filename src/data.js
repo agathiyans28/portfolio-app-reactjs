@@ -178,4 +178,10 @@ const certificates = [
   },
 ];
 
+const project  = [
+  {
+    
+  }
+]
+
 export { greeting, socialMedia, skills, degrees, certificates };

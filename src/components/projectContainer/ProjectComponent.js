@@ -9,19 +9,40 @@ function ProjectCard() {
       // data-aos-duration="1200"
     >
       <div class="project-card mx-auto">
-        <div class="thumb"></div>
+        <div
+          class="thumb"
+          // style={{
+          //   backgroundImage: `url(${
+          //     process.env.PUBLIC_URL + "/portfolio_thumb.png"
+          //   })`,
+          // }}
+          style={{ backgroundImage: `url('../../assets/images/degree.png')` }}
+        ></div>
+
         <div class="overlay">
-          <h2 class="title">
-            Plant AI
-          </h2>
+          <h2 class="title">Plant AI</h2>
           <h3 class="date">Created on 04-02-2022</h3>
-          <h3 class="seats">seats remaining: 2</h3>
-          <p class="details">
+
+          <p class="details overflow-auto">
             Join us for our Live Infinity Session in beautiful New York City.
             This is a 3 day intensive workshop where you'll learn how to become
-            a better version of...
+            a better version of workshop where you'll learn how to become a
+            better version of...
           </p>
-          <a href="#" class="goto-btn">view details</a>
+          <h3 class="seats">
+            Language's:{" "}
+            <span className="">
+              <img
+                className="lang-logo"
+                src={require("../../assets/logo/html5.png")}
+                alt="programming language logo"
+              />
+            </span>
+          </h3>
+
+          <a href="#" class="goto-btn btn btn-success " role="button">
+            view details
+          </a>
         </div>
       </div>
     </div>
