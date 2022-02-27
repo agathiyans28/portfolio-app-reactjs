@@ -178,10 +178,25 @@ const certificates = [
   },
 ];
 
-const project  = [
+const project = [
   {
-    
-  }
-]
+    thumb: "portfolio_thumb.png",
+    title: "Portfolio app using ReactJS",
+    date: "30-02-2022",
+    details:
+      "The Complete Customizable Software Developer Portfolio Template which lets you showcase your work and provides each and every detail about you as Software Developer. ",
+    lang: ["html5.png", "css3.png", "javascript.png", "react.png"],
+    link: "https://github.com/agathiyans28/portfolio-app-reactjs",
+  },
+  {
+    thumb: "portfolio_thumb.png",
+    title: "Portfolio app using ReactJS",
+    date: "30-02-2022",
+    details:
+      "The Complete Customizable Software Developer Portfolio Template which lets you showcase your work and provides each and every detail about you as Software Developer.The Complete Customizable Software Developer Portfolio Template which lets you showcase your work and provides each and every detail about you as Software Developer. ",
+    lang: ["html5.png", "css3.png", "javascript.png", "react.png"],
+    link: "https://github.com/agathiyans28/portfolio-app-reactjs",
+  },
+];
 
-export { greeting, socialMedia, skills, degrees, certificates };
+export { greeting, socialMedia, skills, degrees, certificates, project };

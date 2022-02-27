@@ -77,21 +77,20 @@
   .navbar-brand {
     font-size: 1.7rem !important;
   }
-
-  .nav-item {
-    margin: 0 !important;
-    margin-top: 25px !important;
+  .navbar-nav {
+    margin-top: 60px;
   }
+
   .nav-link {
     font-size: 2.5rem;
     font-weight: 600 !important;
   }
 
   .arrow {
-    font-size: 30px;
+    font-size: 18px;
     opacity: 0;
-    transition: all .5s ease-out;
-  } 
+    transition: all 0.5s ease-out;
+  }
   .nav-item:hover .arrow {
     transform: translateX(20px);
     opacity: 1;
@@ -99,7 +98,7 @@
 
   #contact-btn {
     background-color: var(--text-color);
-    color: var(--body-color) !important;
+    color: #d3dbeb !important;
     border: 1px solid var(--text-color);
     text-align: center;
   }

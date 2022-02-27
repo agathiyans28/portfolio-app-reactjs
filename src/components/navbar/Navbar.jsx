@@ -9,7 +9,6 @@ function Navbar() {
     { name: "Home", to: "/" },
     { name: "Education", to: "/education" },
     { name: "Projects", to: "/projects" },
-    { name: "About", to: "/about" },
   ];
 
   return (
@@ -41,19 +40,19 @@ function Navbar() {
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul
-              className="navbar-nav ms-auto"
+              className="navbar-nav ms-md-auto"
               // data-aos="fade-left"
               // data-aos-duration="2200"
             >
               {links.map((link, index) => (
                 <li className="nav-item ms-lg-3" key={index.toString()}>
-                  <Link className="nav-link px-3" to={link.to}>
+                  <Link className="nav-link my-2 my-md-0 px-3 rounded" to={link.to}>
                     {link.name} <FaArrowRight className="d-md-none arrow" />
                   </Link>
                 </li>
               ))}
               <li className="nav-item ms-lg-3">
-                <Link className="nav-link px-3" to="/contact" id="contact-btn">
+                <Link className="nav-link mt-5 mt-md-0 px-3 rounded" to="/contact" id="contact-btn">
                   Contact Me
                 </Link>
               </li>

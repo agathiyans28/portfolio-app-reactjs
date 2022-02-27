@@ -18,7 +18,7 @@ function Greeting() {
       <div className="row greeting-main d-flex justify-content-around">
         <div className="order-1 col-md-6 mb-5 pt-5 mb-md-0 pt-md-5">
           <div className="greeting-text-div mt-5 pt-5 mt-md-0 pt-md-0">
-            <h3 class="text-title user-select-none mt-5 pt-3 pb-3 mt-md-5 pt-md-0">
+            <h3 className="text-title user-select-none mt-5 pt-3 pb-3 mt-md-5 pt-md-0">
               {greeting.title}
             </h3>
             <br />
