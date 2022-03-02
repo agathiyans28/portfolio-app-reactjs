@@ -1,9 +1,11 @@
 import React from "react";
 import Footer from "../../components/footer/Footer";
-import Greeting from "../../components/greeting/Greeting";
+import Greeting from "../../container/greeting/Greeting";
 import Navbar from "../../components/navbar/Navbar";
-import ProjectComponent from "../../components/projectContainer/ProjectComponent";
-import Skill from "../../components/skills/Skills";
+import Skill from "../../container/skills/Skills";
+import About from "../../container/about/About";
+import ContactForm from "../../container/contactForm/ContactForm";
+import ProjectContainer from "../../container/projectContainer/ProjectContainer";
 
 function Home() {
   return (
@@ -11,7 +13,9 @@ function Home() {
       <Navbar />
       <Greeting />
       <Skill />
-      <ProjectComponent />
+      <ProjectContainer />
+      <About />
+      <ContactForm />
       <Footer />
     </>
   );

@@ -1,0 +1,99 @@
+
+.row .logo {
+    background-color: #e4e4e4;
+    transition: all 0.25s ease-out;
+    height: 215px;
+    width: 215px;
+    box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo:hover {
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+  }
+  
+  .row .logo-link {
+    text-decoration: none;
+    font-size: 20px;
+    background-color: rgb(36, 26, 177);
+    color: aliceblue;
+    filter: opacity(0);
+    transition: all 0.25s ease;
+    top: 110%;
+    left: 50%;
+  }
+  
+  .img-div:hover .logo-link {
+    filter: opacity(1);
+    top: 100%;
+  }
+  
+  .degree-text-div {
+    font-family: "Sarabun";
+    border-radius: 10px;
+    background-color: #e4e4e4;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.25s ease-out;
+    -webkit-transition: all 0.25s ease-out;
+    box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  .degree-text-div:hover {
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+  }
+  
+  .body-header {
+    background-color: #d7dee0;
+  }
+  
+  .card-title {
+    font-weight: 700;
+    color: rgb(37, 39, 170);
+  }
+  .card-subtitle {
+    color: rgb(47, 63, 119);
+    margin-top: 10px !important;
+  }
+  
+  .duration {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .body-content {
+    font-size: 18px;
+    color: rgb(51, 48, 48);
+    font-weight: 500;
+  }
+  
+  .wave {
+    position: absolute;
+    background-image: linear-gradient(
+      118deg,
+      rgba(89, 72, 21, 0) 39%,
+      rgba(250, 245, 245, 0.8474025974025974) 46%,
+      rgba(89, 72, 21, 0) 53%
+    );
+    height: 100%;
+    width: 100%;
+    transform: translate(-450px);
+  }
+  
+  .degree-text-div:hover .wave {
+    animation: wavy 1s cubic-bezier(0.47, 0, 0.745, 0.715);
+    -webkit-animation: wavy 1s cubic-bezier(0.47, 0, 0.745, 0.715);
+  }
+  
+  @keyframes wavy {
+    from {
+      transform: translate(-450px);
+      -webkit-transform: translate(-450px);
+    }
+    to {
+      transform: translate(450px);
+      -webkit-transform: translate(450px);
+    }
+  }
+  
+  /* Degree Section End */
+  

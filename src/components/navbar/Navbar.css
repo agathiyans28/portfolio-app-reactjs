@@ -1,5 +1,9 @@
 @import "../../index.css";
 
+.navbar {
+  z-index: 1;
+}
+
 .navbar-brand {
   font-family: var(--logo-font);
   color: var(--text-color);
@@ -9,6 +13,10 @@
   position: relative;
   height: 20px;
   transition: 2s ease-in-out;
+}
+
+.navbar-brand:hover {
+  color: #7777ac !important;
 }
 
 .navbar-toggler,
@@ -71,9 +79,22 @@
   color: #7777ac !important;
 }
 
+/* Scrollbar  */
+.scrolled-down {
+  transform: translateY(-100%);
+  transition: all 0.3s ease-in-out;
+}
+.scrolled-up {
+  transform: translateY(0);
+  transition: all 0.3s ease-in-out;
+}
+
 /* For Mobile Devices */
 
 @media (max-width: 767px) {
+  /* .navbar {
+    background-color: #e9e9f0;
+  } */
   .navbar-brand {
     font-size: 1.7rem !important;
   }

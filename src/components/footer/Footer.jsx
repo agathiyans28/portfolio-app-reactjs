@@ -2,9 +2,11 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className="text-center">
-      <p>Made by Agathiyan</p>
-    </div>
+    <footer className="footer text-center pt-4">
+      <p>
+        Made with <span className="emoji">❤️</span> by Agathiyan Sivakumar
+      </p>
+    </footer>
   );
 }
 

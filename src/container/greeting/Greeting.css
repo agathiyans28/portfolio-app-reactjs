@@ -1,0 +1,85 @@
+/* Greeting Style */
+.greeting-container {
+  width: 90%;
+  padding: 75px 15px 0 15px;
+  margin-bottom: 100px;
+}
+
+.greeting-container .greeting-text-div {
+  margin-top: 10px;
+  line-height: 2rem !important;
+}
+
+.greeting-container .title-text {
+  letter-spacing: 0.2rem;
+  font-family: "font-file-1";
+  font-size: 69px;
+  color: rgb(7, 56, 146);
+  font-weight: 800;
+  display: block;
+  padding: 13px 0;
+  transition: all 0.5 ease-out !important;
+}
+
+.greeting-container .text-title .letter {
+  display: inline-block;
+  line-height: 1rem;
+}
+
+.greeting-container .role {
+  font-size: 35px;
+  color: rgb(59, 70, 131);
+}
+
+.home-img {
+  max-width: 490px !important;
+}
+
+/* For Mobile Devices */
+
+@media (max-width: 767px) {
+  .greeting-container .greeting-text-div {
+    margin-top: 120px;
+  }
+  .greeting-container .title-text {
+    font-size: 50px;
+  }
+  .greeting-container .role {
+    font-size: 30px !important;
+  }
+  .greeting-container .media-div {
+    text-align: center;
+  }
+}
+
+/* For Mobile Devices below */
+
+@media (max-width: 575px) {
+  .greeting-container .title-text {
+    font-size: 45px;
+    transition: all 0.5s ease-out;
+  }
+  .greeting-container .role {
+    font-size: 25px;
+  }
+}
+
+/* For Taplet Devices */
+
+@media (min-width: 768px) {
+  .greeting-container .title-text {
+    font-size: 52px;
+    transition: all 0.5s ease-out;
+  }
+  .greeting-container .role {
+    font-size: 25px;
+  }
+}
+
+/* For Desktop Devices and above */
+
+@media (min-width: 1200px) {
+  .greeting-container .title-text {
+    font-size: 72px;
+  }
+}

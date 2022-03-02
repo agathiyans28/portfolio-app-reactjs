@@ -2,8 +2,9 @@ import React, { useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/home/Home";
 import Education from "./pages/education/Education";
-import Contact from "./pages/Contact";
+import Contact from "./pages/contact/Contact";
 import Projects from "./pages/projects/Projects";
+// import ScrollToTop from "./components/scrollToTop/ScrollToTop";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -15,11 +16,11 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
+        {/* <ScrollToTop /> */}
         <Routes>
           <Route index element={<Home />} />
           <Route path="/education" element={<Education />} />
           <Route path="/projects" element={<Projects />} />
-
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </BrowserRouter>

@@ -1,0 +1,85 @@
+.contact-container {
+  width: 90%;
+  padding: 85px 15px 0 15px;
+  margin-bottom: 50px;
+}
+
+.contact-container .heading-text {
+  color: rgb(30, 53, 155);
+  font-weight: 600;
+  font-family: "font-file-1";
+  font-size: 3.2rem;
+  letter-spacing: 0.2rem;
+  transition: all 0.5s ease-out;
+}
+
+.contact-container .img-div {
+  max-width: 540px !important;
+}
+
+.contact-container .sub-title {
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: rgb(89, 106, 139);
+}
+
+.contact-container .submit-btn {
+  width: 95%;
+  font-size: 1.1rem;
+}
+
+/* Contact Form Card */
+
+.form .form-control-input {
+  width: 100%;
+  border: none;
+  padding: 12px;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  background-color: #f1f1f1;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+}
+
+.form .form-control-input:focus {
+  color: #212529;
+  background-color: #f2f2f2;
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.form textarea {
+  height: 130px;
+}
+
+@media (max-width: 767px) {
+  .contact-container .heading-text-div {
+    margin-top: 50px !important;
+  }
+  .contact-container .heading-text {
+    font-size: 2.4rem !important;
+  }
+}
+
+/* For small Mobile Devices */
+
+@media (max-width: 575px) {
+  .contact-container .heading-text {
+    font-size: 2.3rem !important;
+  }
+}
+
+/* For Taplet Devices and above.. */
+
+@media (min-width: 768px) {
+  .contact-container .heading-text {
+    font-size: 2.6rem !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact-container .heading-text {
+    font-size: 3.2rem !important;
+  }
+}

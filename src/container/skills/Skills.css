@@ -1,0 +1,22 @@
+.skill-main {
+  width: 90%;
+  padding: 0 15px;
+}
+
+.div-title {
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+
+@media (max-width: 767px) {
+  .div-title {
+    font-size: 2rem !important;
+  }
+}
+/* For small Mobile Devices */
+
+@media (max-width: 575px) {
+  .div-title {
+    font-size: 1.8rem !important;
+  }
+}

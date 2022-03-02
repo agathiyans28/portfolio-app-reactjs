@@ -1,0 +1,23 @@
+.certification-container {
+  width: 90%;
+  padding: 0 15px;
+  margin: auto;
+}
+
+.div-title {
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+
+@media (max-width: 767px) {
+  .div-title {
+    font-size: 2rem !important;
+  }
+}
+/* For small Mobile Devices */
+
+@media (max-width: 575px) {
+  .div-title {
+    font-size: 1.6rem !important;
+  }
+}

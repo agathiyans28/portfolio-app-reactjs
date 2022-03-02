@@ -1,0 +1,49 @@
+.education-container {
+  width: 90%;
+  padding: 145px 15px 0 15px !important;
+  margin-bottom: 100px;
+}
+
+.education-container .heading-div {
+  margin: 15px auto;
+  line-height: 1.8rem;
+}
+
+.education-container .edu-img {
+  max-width: 570px !important;
+}
+
+.education-container .heading-text-div {
+  line-height: 1.8rem;
+}
+
+.education-container .heading-text {
+  color: rgb(30, 53, 155);
+  font-weight: 700;
+  font-family: "font-file-1";
+  font-size: 3.4rem;
+  letter-spacing: 0.3rem;
+}
+.education-container .sub-title {
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: rgb(89, 106, 139);
+}
+
+/* For Mobile Devices Start */
+
+@media (max-width: 767px) {
+  .education-container .heading-div {
+    margin-top: 100px !important;
+  }
+  .education-container .heading-text-div {
+    margin-top: 80px !important;
+  }
+  .education-container .heading-text {
+    font-size: 36px;
+  }
+  .education-container .sub-title {
+    font-weight: 300;
+    padding: 0;
+  }
+}
