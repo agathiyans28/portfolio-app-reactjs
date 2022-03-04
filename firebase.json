@@ -1,11 +1,17 @@
 {
   "hosting": {
     "public": "build",
-    "site": "agathiyans",
+    "site": "agathiyansivakumar",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
     ]
   }
 }

@@ -14,7 +14,7 @@
   <a href="https://img.shields.io/badge/price-free-ff69b4"><img alt="Price" src="https://img.shields.io/badge/price-free-ff69b4?style=flat-square" /></a>
 </div>
 <p align="center"> 
-    <a href="https://agathiyans.web.app" target="_blank">
+    <a href="https://agathiyansivakumar.web.app" target="_blank">
     <img src="src/assets/images/portfolio_thumb.png"></img>
   </a>
 </p>
@@ -27,7 +27,7 @@
 ✔️ Education\
 ✔️ Contact me
 
-To view a live example, **[click here](https://agathiyans.web.app)**
+To view a live example, **[click here](https://agathiyansivakumar.web.app)**
 
 # Clone And Use 📋
 
