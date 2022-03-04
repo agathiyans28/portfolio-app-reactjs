@@ -11,8 +11,8 @@ function DegreeContainer() {
     >
       <h1
         className="text-center mb-5 div-title"
-        // data-aos="fade-up"
-        // data-aos-duration="2000"
+        data-aos="fade-up"
+        data-aos-duration="2000"
       >
         Degrees Received
       </h1>

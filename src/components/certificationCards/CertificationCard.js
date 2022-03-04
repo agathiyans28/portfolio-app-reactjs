@@ -7,8 +7,8 @@ function CertificationCard(props) {
   return (
     <div
       className="col-12 col-sm-10 col-md-6 col-xl-4 mb-5 px-0 px-sm-3"
-      // data-aos="zoom-in-up"
-      // data-aos-duration="1200"
+      data-aos="zoom-in-up"
+      data-aos-duration="1000"
     >
       <div className="flip mx-auto">
         <div className="front">

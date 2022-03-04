@@ -1,12 +1,13 @@
-import React, { useEffect } from "react";
+import React, { useLayoutEffect, useEffect } from "react";
 import { Link, Outlet } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa";
 import { greeting } from "../../data";
 import "./Navbar.css";
+import anime from "animejs";
 
 function Navbar() {
   const links = [
-    { name: "Home", to: "/" },
+    { name: "Home", to: "/home" },
     { name: "Education", to: "/education" },
     { name: "Projects", to: "/projects" },
   ];
@@ -54,22 +55,34 @@ function Navbar() {
     });
   }, []);
 
+  useLayoutEffect(() => {
+    anime
+      .timeline({ loop: 1 })
+      .add({
+        targets: ".navbar-brand",
+        opacity: [0, 1],
+        translateX: [-50, 0],
+        easing: "easeOutExpo",
+        delay: 1000,
+      })
+      .add({
+        targets: ".navbar-toggler, .navbar-nav",
+        opacity: [0, 1],
+        translateX: [50, 0],
+        easing: "easeOutExpo",
+        delay: 300,
+      });
+  });
+
   return (
     <>
-      <nav className="position-fixed autohide navbar navbar-expand-md container-fluid py-3 py-lg-1">
+      <nav className="position-fixed autohide navbar navbar-expand-md container-fluid py-3 py-lg-2">
         <div className="container-fluid mx-lg-4 mx-1">
-          <a
-            href="/"
-            className="navbar-brand"
-            data-aos="fade-up"
-            data-aos-duration="2000"
-          >
+          <a href="/" className="navbar-brand">
             {greeting.logo_name}
           </a>
           <button
             className="navbar-toggler collapsed d-flex d-md-none justify-content-around flex-column"
-            // data-aos="fade-up"
-            // data-aos-duration="2000"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -84,8 +97,8 @@ function Navbar() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul
               className="navbar-nav ms-md-auto"
-              data-aos="fade-left"
-              data-aos-duration="2200"
+              // data-aos="fade-left"
+              // data-aos-duration="2200"
             >
               {links.map((link, index) => (
                 <li className="nav-item ms-lg-3" key={index.toString()}>

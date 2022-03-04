@@ -9,8 +9,8 @@ function CertificationContainer() {
     <div className="certification-container mb-5">
       <h1
         className="text-center mb-5 div-title"
-        // data-aos="fade-up"
-        // data-aos-duration="2000"
+        data-aos="fade-up"
+        data-aos-duration="2000"
       >
         Certifications
       </h1>

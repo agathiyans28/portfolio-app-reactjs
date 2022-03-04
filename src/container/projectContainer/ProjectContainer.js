@@ -10,8 +10,8 @@ function ProjectContainer() {
     >
       <h1
         className="text-center div-title"
-        // data-aos="fade-up"
-        // data-aos-duration="2000"
+        data-aos="fade-up"
+        data-aos-duration="2000"
       >
         My Recent Works
       </h1>

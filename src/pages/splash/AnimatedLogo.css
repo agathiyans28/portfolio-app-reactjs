@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+
+.loading-container {
+  color: #fff;
+  height: 100vh;
+  overflow: hidden;
+  background: #393d4e !important;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-container .circle {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  
+}
+
+.loading-container .circle-white {
+  width: 50vw;
+  height: 50vh;
+  background: var(--body-color);
+}
+
+
+
+.loading-logo {
+  margin: auto;
+  background: 50% 100% / 50% 50% no-repeat
+    radial-gradient(ellipse at bottom, #fff, transparent, transparent);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 10vw;
+  font-family: "Source Sans Pro", sans-serif;
+  animation: reveal 3000ms ease-in-out forwards 200ms,
+    glow 1500ms linear infinite 2000ms;
+}
+@keyframes reveal {
+  80% {
+    letter-spacing: 8px;
+  }
+  100% {
+    background-size: 300% 300%;
+  }
+}
+@keyframes glow {
+  40% {
+    text-shadow: 0 0 8px #fff;
+  }
+}

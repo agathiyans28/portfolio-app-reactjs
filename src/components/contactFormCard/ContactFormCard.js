@@ -1,14 +1,35 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import emailjs from "emailjs-com";
+import Swal from "sweetalert2";
 
 export default function App() {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
-  const onSubmit = (data) => console.log(data);
-  console.log(errors);
+  const { register, handleSubmit, reset } = useForm();
+  const onSubmit = (data) => {
+    if (data) {
+      emailjs
+        .send("service_vtaict5", "template_4xf6248", data, "fCVrMr_2RqC5gav2r")
+        .then(
+          (result) => {
+            console.log(result.text);
+            Swal.fire({
+              icon: "success",
+              title: "Message Sent Successfully",
+            });
+            reset({ name: "", email: "", subject: "", message: "" });
+          },
+          (error) => {
+            console.log(error.text);
+            Swal.fire({
+              icon: "error",
+              title: "Oops, Something went wrong",
+              text: error.text,
+            });
+          }
+        );
+      
+    }
+  };
 
   return (
     <form
@@ -21,14 +42,14 @@ export default function App() {
           id="name"
           className="form-control-input me-sm-3"
           placeholder="Full name"
-          {...register("Full name", { required: true, maxLength: 30 })}
+          {...register("name", { required: true, maxLength: 30 })}
         />
         <input
           type="email"
           id="email"
           className="form-control-input"
           placeholder="Email"
-          {...register("Email", { required: true, pattern: /^\S+@\S+$/i })}
+          {...register("email", { required: true, pattern: /^\S+@\S+$/i })}
         />
       </div>
 
@@ -38,7 +59,7 @@ export default function App() {
           id="subject"
           className="form-control-input"
           placeholder="Subject"
-          {...register("Full name", { required: true, maxLength: 100 })}
+          {...register("subject", { required: true, maxLength: 100 })}
         />
       </div>
 
@@ -46,11 +67,15 @@ export default function App() {
         <textarea
           placeholder="Message"
           className="form-control-input"
-          {...register("Message", { required: true })}
+          {...register("message", { required: true })}
         />
       </div>
 
-      <input type="submit" className="mt-3 submit-btn mx-auto p-2 d-block btn btn-primary" value="Send" />
+      <input
+        type="submit"
+        className="mt-3 submit-btn mx-auto p-2 d-block btn btn-primary"
+        value="Send"
+      />
     </form>
   );
 }

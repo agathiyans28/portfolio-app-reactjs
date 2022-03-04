@@ -1,0 +1,11 @@
+.resume-btn {
+  background-color: rgb(30, 53, 155) !important;
+  color: #f1f1f1 !important;
+}
+/* For Taplet Devices and above.. */
+
+@media (min-width: 768px) {
+  .resume-btn {
+    font-size: 1.3rem !important;
+  }
+}

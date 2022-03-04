@@ -1,20 +1,24 @@
 import React from "react";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
-import './SkillSection.css'
+import "./SkillSection.css";
 
 function SkillSections(props) {
   const [{ title }, { skills }] = props.skills;
 
   return (
-    <div className="skills-main mt-5">
+    <div
+      className="skills-main mt-5"
+      data-aos="zoom-in-up"
+      data-aos-duration="1000"
+    >
       <h4 className="text-center text-primary card-div-title">{title}</h4>
       <div className="row mx-auto mt-4">
         {skills.map((item, index) => {
           return (
             <div
-              // data-aos='slide-up'
-              // data-aos-duration='1500'
+              data-aos='slide-up'
+              data-aos-duration='1000'
               className="col-6 col-sm-4 col-md-3 col-xl-2 p-2"
               key={index}
             >

@@ -1,14 +1,13 @@
 import React from "react";
 import "./ProjectCard.css";
 
-
 function ProjectCard(props) {
   const prop = props.item;
   return (
     <div
       className="col-12 col-sm-10 col-md-6 col-xl-4 mt-5"
-      // data-aos="zoom-in-up"
-      // data-aos-duration="1200"
+      data-aos="zoom-in-up"
+      data-aos-duration="1200"
     >
       <div className="project-card mx-auto">
         <div className="thumb">
@@ -26,7 +25,7 @@ function ProjectCard(props) {
           <h3 className="date">Created on {prop.date}</h3>
 
           <p className="details overflow-auto">{prop.details}</p>
-          <h3 className="seats mt-3 mt-md-0">Language's: </h3>
+
           <div className="lang-div mx-auto">
             <span className="lang-tag d-flex justify-content-center pb-3">
               {prop.lang.map((item, index) => (
@@ -41,8 +40,8 @@ function ProjectCard(props) {
 
             <a
               href={prop.link}
-              target="_blank"
-              rel="noreferrer"
+              // target="_blank"
+              // rel="noreferrer"
               className="goto-btn btn btn-success mt-2 mt-sm-3"
               role="button"
             >

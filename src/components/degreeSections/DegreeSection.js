@@ -9,8 +9,8 @@ function DegreeSection(props) {
       <div className="col-md-4 d-flex justify-content-center">
         <div className="position-relative img-div">
           <img
-            // data-aos="zoom-in-right"
-            // data-aos-duration="2000"
+            data-aos="zoom-in-right"
+            data-aos-duration="1000"
             className="logo rounded-circle p-4"
             src={require(`../../assets/logo/${degrees.logo}`)}
             alt="Collage Logo"
@@ -27,8 +27,8 @@ function DegreeSection(props) {
       </div>
       <div
         className="col-md-8 degree-text-div p-0 mt-5 mt-md-0"
-        // data-aos="zoom-in-left"
-        // data-aos-duration="2000"
+        data-aos="zoom-in-left"
+        data-aos-duration="1000"
       >
         <div className="wave"></div>
         <div className="body-header p-3 d-md-flex justify-content-between">

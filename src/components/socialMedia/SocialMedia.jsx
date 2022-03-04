@@ -4,7 +4,7 @@ import "./socialMedia.css";
 
 function SocialMedia() {
   return (
-    <div className="media-div mt-5 pt-5 mb-5 mb-md-0 pt-md-0">
+    <div className="media-div">
       {socialMedia.map((item, index) => (
         <a
           href={item.link}

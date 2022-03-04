@@ -5,9 +5,9 @@ const greeting = {
   title: "Agathiyan",
   logo_name: "< Agathiyan Sivakumar />",
   role: ["Web Developer", "Software Developer", "Front End Developer"],
-  resumeLink: "",
-  portfolio_repository: "",
-  githubProfile: "",
+  resumeLink: "https://drive.google.com/file/d/14ofXxDQDL47-sYVLSSqALShO4FKsDZFd/view?usp=sharing",
+  // portfolio_repository: "",
+  // githubProfile: "",
 };
 
 const socialMedia = [
@@ -196,13 +196,13 @@ const project = [
     link: "https://github.com/agathiyans28/portfolio-app-reactjs",
   },
   {
-    thumb: "portfolio_thumb.png",
-    title: "Portfolio app using ReactJS",
-    date: "30-02-2022",
+    thumb: "plant-leaf.jpg",
+    title: "Plant leaf disease detection using CNN",
+    date: "30-07-2021",
     details:
-      "The Complete Customizable Software Developer Portfolio Template which lets you showcase your work and provides each and every detail about you as Software Developer.The Complete Customizable Software Developer Portfolio Template which lets you showcase your work and provides each and every detail about you as Software Developer. ",
-    lang: ["html5.png", "css3.png", "javascript.png", "react.png"],
-    link: "https://github.com/agathiyans28/portfolio-app-reactjs",
+      " Performing Leaf Image classification for Recognition of Plant Diseases using various types of CNN Architecture, For detection of Diseased Leaf and thus helping the increase in crop yield. ",
+    lang: ["html5.png", "css3.png", "python.png", 'tensorflow.png'],
+    link: "#",
   },
 ];
 

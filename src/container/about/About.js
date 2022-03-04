@@ -1,4 +1,5 @@
 import React from "react";
+import ResumeButton from "../../components/resumeButton/ResumeButton";
 import HelloImg from "./HelloImg";
 import "./About.css";
 
@@ -7,8 +8,8 @@ function About() {
     <div
       className="about-container mx-auto"
       id="about"
-      // data-aos="fade-up"
-      // data-aos-duration="2000"
+      data-aos="fade-up"
+      data-aos-duration="2000"
     >
       <div className="row d-md-flex justify-content-around">
         <div className="col-md-6 heading-text-div">
@@ -22,6 +23,9 @@ function About() {
             Products and also in areas related to Deep Learning and Natural
             Launguage Processing.
           </p>
+          <div className="pt-5 text-center">
+            <ResumeButton />
+          </div>
         </div>
         <div className="col-md-6 img-div mt-5 pt-5">
           <HelloImg />
